@@ -1,6 +1,7 @@
-import './App.css'
+import { Navbar } from './components'
 
-function App() {
-}
+const App = () => (
+    <Navbar />
+)
 
 export default App
