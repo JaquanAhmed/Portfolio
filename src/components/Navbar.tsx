@@ -1,14 +1,14 @@
 
-const navLinks : string[] = ["About", "Experience", "Projects", "Contacts", "dfjhhgd"];
+const navLinks : string[] = ["ABOUT", "EXPERIENCE", "PROJECTS", "CONTACTS"];
 
 const Navbar = () => (
     <nav>
-        <div>
-            <ul className = "list-none m-0 p-0 overflow-hidden bg-slate-800">
-                {navLinks.map((link : String) =>
-                    (<li className = "float-left">
+        <div className = "flex justify-center">
+            <ul className = "list-none m-0 p-0 overflow-hidden bg-transparent">
+                {navLinks.map((link : string) =>
+                    (<li className = "inline-flex justify-center">
                         <a 
-                        className = "block text-white text-center py-4 px-16 decoration-0" 
+                        className = "block text-gray-200 text-xl text-center font-mono py-4 px-10 decoration-0 hover:text-green-200" 
                         href = "#">{link}
                         </a>
                     </li>)
